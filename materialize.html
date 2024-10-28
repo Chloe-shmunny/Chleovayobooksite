@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Books, Books, & Books - Book Edition</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <style>
+       body {
+           background-color: #ede7f6;
+           font-family: Arial, sans-serif;
+       }
+       .header-bg {
+           background-color: #5e35b1;
+       }
+       .section-bg {
+           background-color: #d1c4e9;
+       }
+       h4, .media-container h5 {
+           color: #512da8;
+       }
+       .blockquote {
+           color: #7e57c2;
+           font-style: italic;
+       }
+       .circle-img {
+           width: 100%;
+           border-radius: 50%;
+           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+       }
+   </style>
+</head>
+<body>
+
+   <nav class="header-bg">
+       <div class="nav-wrapper">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="reviews.html">Book Recommendations</a></li>
+               <li><a href="learnmore.html">About me</a></li>
+               <li><a href="materialize.html">Book News!</a></li>
+           </ul>
+       </div>
+   </nav>
+
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Whats new in Literature</h1>
+       <p class="white-text">Discover Your Next Favorite Book, Author and more.</p>
+   </div>
+
+   <div class="container section section-bg">
+    <div class="row">
+        <div class="col s12 m6">
+            <img src="image/marcus.png" alt="Reading Corner" class="responsive-img circle-img" style="width: 100px; height: auto;">
+            <blockquote>“A room without books is like a body without a soul.” – Marcus Tullius Cicero</blockquote>
+        </div>
+
+           <div class="col s12 m6">
+               <h4>Whats new in the book world </h4>
+               <p>This page is to keep up with the latest and trendiest news in the book world!
+                Starting with the beloved book serious, known for breaking records and beautifuly written characters 
+                (I Love you Xadion) FOURTH WING!!! Book 1 of the Empyrean series written by the one and only Rebbeca Yarros. 
+               </p>
+           </div>
+       </div>
+   </div>
+
+   <!-- Featured Book Video -->
+   <div class="container section">
+       <div class="row">
+           <div class="col s12 m6">
+               <h4>Interview with the Author of Fourth Wing! Meet Rebecca Yarros</h4>
+               <p>Watch Rebbeca Talk about her next book for one the most popular book series to date!</p>
+            </div>
+            <div class="col s12 m6">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S_Lm56IVaNw" frameborder="0" allowfullscreen></iframe>
+                </div>
+           </div>
+       </div>
+   </div>
+
+<!-- Circular Book Image -->
+<div class="container section section-bg">
+    <h4 class="center-align">The Latest Book Drops for October</h4>
+    <div class="row">
+        <div class="col s4">
+            <img src="image/Spectacular.png" alt="Spectacular Book Cover" class="responsive-img circle">
+            <blockquote class="center-align">Spectacular (Caraval, #3.5) by Stephanie Garber</blockquote>
+        </div>
+        <div class="col s4">
+            <img src="image/heri.png" alt="Heir Book Cover" class="responsive-img circle">
+            <blockquote class="center-align">Heir (Heir Duology, #1) By Sabaa Tahir</blockquote>
+        </div>
+        <div class="col s4">
+            <img src="image/weddingwitch.png" alt="The Wedding Witch Book Cover" class="responsive-img circle">
+            <blockquote class="center-align">The Wedding Witch (The Ex Hex, #3) By Erin Sterling</blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+   <footer class="page-footer header-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 center-align">
+                   <p class="white-text">&copy; 2024 Literary News. All rights reserved.</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Materialize JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.materialboxed');
+           var instances = M.Materialbox.init(elems);
+       });
+   </script>
+</body>
+</html>
