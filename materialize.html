@@ -4,17 +4,20 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Books, Books, & Books - Book Edition</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <!-- Materialize CSS -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <style>
        body {
-           background-color: #ede7f6;
+           background-color: #a992cb;
            font-family: Arial, sans-serif;
        }
        .header-bg {
            background-color: #5e35b1;
        }
        .section-bg {
-           background-color: #d1c4e9;
+           background-color: #cabbe6;
        }
        h4, .media-container h5 {
            color: #512da8;
@@ -28,10 +31,34 @@
            border-radius: 50%;
            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
        }
+       .collapsible-header {
+            background-color: #7e57c2; /* Change the background color */
+            color: white; /* Change text color */
+            padding: 15px; /* Add padding */
+            font-weight: bold; /* Bold text */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        
+        .collapsible-header:hover {
+            background-color: #5e35b1; /* Darker shade on hover */
+        }
+        
+        .collapsible-body {
+            background-color: #d1c4e9; /* Change the body background color */
+            padding: 15px; /* Add padding to body */
+            border-left: 5px solid #7e57c2; /* Add a left border */
+        }
+        
+        .material-icons {
+            vertical-align: middle; /* Align icon with text */
+            margin-right: 10px; /* Space between icon and text */
+        }
    </style>
+
 </head>
 <body>
 
+   <!-- Navbar -->
    <nav class="header-bg">
        <div class="nav-wrapper">
            <ul>
@@ -42,82 +69,241 @@
            </ul>
        </div>
    </nav>
-
+   <!-- Header Section -->
    <div class="section header-bg center-align">
-       <h1 class="white-text">Whats new in Literature</h1>
-       <p class="white-text">Discover Your Next Favorite Book, Author and more.</p>
+       <h1 class="white-text">What's New in Literature</h1>
+       <p class="white-text">Discover Your Next Favorite Book, Author, and More</p>
    </div>
 
+   <!-- Book Recommendation Section -->
    <div class="container section section-bg">
-    <div class="row">
-        <div class="col s12 m6">
-            <img src="image/marcus.png" alt="Reading Corner" class="responsive-img circle-img" style="width: 100px; height: auto;">
-            <blockquote>“A room without books is like a body without a soul.” – Marcus Tullius Cicero</blockquote>
-        </div>
-
+       <div class="row">
            <div class="col s12 m6">
-               <h4>Whats new in the book world </h4>
-               <p>This page is to keep up with the latest and trendiest news in the book world!
-                Starting with the beloved book serious, known for breaking records and beautifuly written characters 
-                (I Love you Xadion) FOURTH WING!!! Book 1 of the Empyrean series written by the one and only Rebbeca Yarros. 
-               </p>
+               <img src="image/marcus.png" alt="Reading Corner" class="responsive-img circle-img" style="width: 100px; height: auto;">
+               <blockquote>“A room without books is like a body without a soul.” – Marcus Tullius Cicero</blockquote>
+           </div>
+           <div class="col s12 m6">
+               <h4>What's New in the Book World</h4>
+               <p>This page is to keep up with the latest and trendiest news in the book world! Starting with the beloved book series, known for breaking records and beautifully written characters (I Love you Xadion), *FOURTH WING!* Book 1 of the Empyrean series written by Rebecca Yarros.</p>
            </div>
        </div>
    </div>
 
-   <!-- Featured Book Video -->
+   <!-- Featured Book Video Section -->
    <div class="container section">
        <div class="row">
            <div class="col s12 m6">
                <h4>Interview with the Author of Fourth Wing! Meet Rebecca Yarros</h4>
-               <p>Watch Rebbeca Talk about her next book for one the most popular book series to date!</p>
-            </div>
-            <div class="col s12 m6">
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S_Lm56IVaNw" frameborder="0" allowfullscreen></iframe>
-                </div>
+               <p>Watch Rebecca talk about her next book in one of the most popular book series to date!</p>
+           </div>
+           <div class="col s12 m6">
+               <div class="video-container">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/S_Lm56IVaNw" frameborder="0" allowfullscreen></iframe>
+               </div>
            </div>
        </div>
    </div>
 
-<!-- Circular Book Image -->
+   <!-- Carousel Section -->
+   
 <div class="container section section-bg">
-    <h4 class="center-align">The Latest Book Drops for October</h4>
-    <div class="row">
-        <div class="col s4">
-            <img src="image/Spectacular.png" alt="Spectacular Book Cover" class="responsive-img circle">
-            <blockquote class="center-align">Spectacular (Caraval, #3.5) by Stephanie Garber</blockquote>
-        </div>
-        <div class="col s4">
-            <img src="image/heri.png" alt="Heir Book Cover" class="responsive-img circle">
-            <blockquote class="center-align">Heir (Heir Duology, #1) By Sabaa Tahir</blockquote>
-        </div>
-        <div class="col s4">
-            <img src="image/weddingwitch.png" alt="The Wedding Witch Book Cover" class="responsive-img circle">
-            <blockquote class="center-align">The Wedding Witch (The Ex Hex, #3) By Erin Sterling</blockquote>
-        </div>
+    <h4 class="center-align">Popular Book Series to Check Out</h4>
+    <div class="carousel">
+        <!-- Carousel Item 1 -->
+        <a class="carousel-item" href="#book1">
+            <img src="image/gggtm.jpeg" alt="A GGGtM book cover">
+            <div class="carousel-caption">
+                <h5>*A Good Girl's Guide to Murder*</h5>
+                <!--<p>Everyone in Fairview knows the story.
+
+                    Pretty and popular high school senior Andie Bell was murdered by her boyfriend, Sal Singh, who then killed himself. It was all anyone could talk about. And five years later, Pip sees how the tragedy still haunts her town.
+                    
+                    But she can't shake the feeling that there was more to what happened that day. She knew Sal when she was a child, and he was always so kind to her. How could he possibly have been a killer?
+                    
+                    Now a senior herself, Pip decides to reexamine the closed case for her final project, at first just to cast doubt on the original investigation. But soon she discovers a trail of dark secrets that might actually prove Sal innocent . . . and the line between past and present begins to blur. Someone in Fairview doesn't want Pip digging around for answers, and now her own life might be in danger.
+                    
+                    .</p>-->
+            </div>
+        </a>
+        
+        <!-- Carousel Item 2 -->
+        <a class="carousel-item" href="#book2">
+            <img src="image/dot.jpg" alt="Dance of theives Book Cover">
+            <div class="carousel-caption">
+                <h5>Dance of Theives series</h5>
+                <!--<p>When the patriarch of the Ballenger empire dies, his son, Jase, becomes its new leader. 
+                    Even nearby kingdoms bow to the strength of this outlaw family, who have always governed
+                     by their own rules. But a new era looms on the horizon, set in motion by a young queen, 
+                     which makes her the target of the dynasty's resentment and anger.
+                </p>-->
+            </div>
+        </a>
+        
+        <!-- Carousel Item 3 -->
+        <a class="carousel-item" href="#book3">
+            <img src="image/folkoftheair.jpg" alt="Folk of the air Book Covers">
+            <div class="carousel-caption">
+                <h5>*Folk of The Air series*</h5>
+                <!--<p>Jude was seven when her parents were murdered and she and her two sisters were stolen 
+                    away to live in the treacherous High Court of Faerie. Ten years later, Jude wants nothing 
+                    more than to belong there, despite her mortality. But many of the fey despise humans. Especially
+                     Prince Cardan, the youngest and wickedest son of the High King.
+
+                    To win a place at the Court, she must defy him–and face the consequences.</p> -->
+            </div>
+        </a>
+        
+        <!-- Carousel Item 4 -->
+        <a class="carousel-item" href="#book4">
+            <img src="image/acotar.jpg" alt="Romantasy Book Cover">
+            <div class="carousel-caption">
+                <h5>*A Court series*</h5>
+                <!--<p>When nineteen-year-old huntress Feyre kills a wolf in the woods, a 
+                    terrifying creature arrives to demand retribution. Dragged to a treacherous magical
+                     land she knows about only from legends, Feyre discovers that her captor is not truly a 
+                     beast, but one of the lethal, immortal faeries who once ruled her world.-->
+                </p>
+            </div>
+        </a>
     </div>
+ </div>
+
+ <!-- Collapsible Structure -->
+<ul class="collapsible">
+    <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>A Good Girls Guide to Murder series</div>
+        <div class="collapsible-body"><span>Everyone in Fairview knows the story.
+
+            Pretty and popular high school senior Andie Bell was murdered by her boyfriend, Sal Singh, who then killed himself. It was all anyone could talk about. And five years later, Pip sees how the tragedy still haunts her town.
+            
+            But she can't shake the feeling that there was more to what happened that day. She knew Sal when she was a child, and he was always so kind to her. How could he possibly have been a killer?
+            
+            Now a senior herself, Pip decides to reexamine the closed case for her final project, at first just to cast doubt on the original investigation. But soon she discovers a trail of dark secrets that might actually prove Sal innocent . . . and the line between past and present begins to blur. Someone in Fairview doesn't want Pip digging around for answers, and now her own life might be in danger.
+            
+            .</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>Dance of Theives series</div>
+        <div class="collapsible-body"><span>When the patriarch of the Ballenger empire dies, his son, Jase, becomes its new leader. 
+            Even nearby kingdoms bow to the strength of this outlaw family, who have always governed
+             by their own rules. But a new era looms on the horizon, set in motion by a young queen, 
+             which makes her the target of the dynasty's resentment and anger.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>*Folk of The Air series*</div>
+        <div class="collapsible-body"><span>Jude was seven when her parents were murdered and she and her two sisters were stolen 
+            away to live in the treacherous High Court of Faerie. Ten years later, Jude wants nothing 
+            more than to belong there, despite her mortality. But many of the fey despise humans. Especially
+             Prince Cardan, the youngest and wickedest son of the High King.
+
+            To win a place at the Court, she must defy him–and face the consequences.</span></div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>*A Court series*</div>
+        <div class="collapsible-body"><span>When nineteen-year-old huntress Feyre kills a wolf in the woods, a 
+            terrifying creature arrives to demand retribution. Dragged to a treacherous magical
+             land she knows about only from legends, Feyre discovers that her captor is not truly a 
+             beast, but one of the lethal, immortal faeries who once ruled her world.</span></div>
+    </li>
+</ul>
 </div>
 
 
+   <!-- October Book Drops Section -->
+   <div class="container section section-bg">
+       <h4 class="center-align">The Latest Book Drops for October</h4>
+       <div class="row">
+           <div class="col s4">
+               <img src="image/Spectacular.png" alt="Spectacular Book Cover" class="responsive-img circle">
+               <blockquote class="center-align">Spectacular (Caraval, #3.5) by Stephanie Garber</blockquote>
+           </div>
+           <div class="col s4">
+               <img src="image/heri.png" alt="Heir Book Cover" class="responsive-img circle">
+               <blockquote class="center-align">Heir (Heir Duology, #1) By Sabaa Tahir</blockquote>
+           </div>
+           <div class="col s4">
+               <img src="image/weddingwitch.png" alt="The Wedding Witch Book Cover" class="responsive-img circle">
+               <blockquote class="center-align">The Wedding Witch (The Ex Hex, #3) By Erin Sterling</blockquote>
+           </div>
+       </div>
+   </div>
 
+   
+
+   <!-- Radio Button Interaction -->
+   <div id="radio-section" class="section container">
+       <h2>Select Your Next Series</h2>
+       <form>
+           <p>
+               <label>
+                   <input name="pastry" type="radio" value="Croissant" onclick="displayPastry()"/>
+                   <span>A Good Girls Guide to Murder</span>
+               </label>
+           </p>
+           <p>
+            <label>
+                <input name="pastry" type="radio" value="Muffin" onclick="displayPastry()"/>
+                <span>Dance Of Theives</span>
+            </label>
+        </p>
+           <p>
+               <label>
+                   <input name="pastry" type="radio" value="Muffin" onclick="displayPastry()"/>
+                   <span>Fold of the Air series</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="pastry" type="radio" value="Donut" onclick="displayPastry()"/>
+                   <span>A Court Of Thorns and Roses</span>
+               </label>
+           </p>
+       </form>
+       <div id="pastry-response"></div>
+   </div>
+
+   <!-- Email Feedback Section -->
+   <div id="feedback-section" class="section container">
+       <h2>Subscribe for Updates</h2>
+       <form onsubmit="submitEmail(event)">
+           <div class="input-field">
+               <input id="email" type="email" required>
+               <label for="email">Email</label>
+           </div>
+           <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+       </form>
+       <div id="email-response"></div>
+   </div>
+
+   <!-- Footer -->
    <footer class="page-footer header-bg">
        <div class="container">
            <div class="row">
                <div class="col s12 center-align">
-                   <p class="white-text">&copy; 2024 Literary News. All rights reserved.</p>
+                   <p class="white-text">&copy; 2024 All About Books | Contact: Vayoc@Miamioh.edu</p>
                </div>
            </div>
        </div>
    </footer>
 
-   <!-- Materialize JS -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <!-- Materialize JS for carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    <script>
        document.addEventListener('DOMContentLoaded', function() {
-           var elems = document.querySelectorAll('.materialboxed');
-           var instances = M.Materialbox.init(elems);
+           var elemsCarousel = document.querySelectorAll('.carousel');
+           var instancesCarousel = M.Carousel.init(elemsCarousel);
        });
+   </script>
+
+   <!-- Materialize JS for calapsable-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           var elemsCollapsible = document.querySelectorAll('.collapsible');
+           var instancesCollapsible = M.Collapsible.init(elemsCollapsible);
+       });
+   </script>
+
    </script>
 </body>
 </html>
