@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header>
+    <h1>More about Books</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Book Reviews</a></li>
+            <li><a href="learnmore.html">Learn More About Me</a></li>
+            <li><a href="materialize.html">Book News</a></li>
+            <li><a href="jquery.html">Book recomendation - Extras</a></li>
+
+        </ul>
+    </nav>
+</header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Interactions with jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    /* Page background in a pastel gradient */
+    body {
+      background: linear-gradient(135deg, #d3e0ff 30%, #ffe3e3 100%);
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    /* Styling for the sections with a soft card effect */
+    #panel, #flip, .genre, .mystery-book {
+      padding: 15px;
+      text-align: center;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Specific colors for the different sections */
+    .mystery-book {
+      background-color: #e0f7fa; /* Light pastel blue */
+      color: #00796b;
+    }
+
+    .genre {
+      background-color: #f8bbd0; /* Light pastel pink */
+      color: #880e4f;
+    }
+
+    #flip {
+      background-color: #d1c4e9; /* Lavender */
+      color: #4527a0;
+      cursor: pointer;
+    }
+
+    #panel {
+      background-color: #e8eaf6; /* Light purple */
+      color: #283593;
+      display: none;
+    }
+
+    /* Style for buttons */
+    button {
+      background-color: #ffcccb; /* Light pastel pink */
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+      background-color: #ffb3b0; /* Slightly darker pink */
+    }
+
+  </style>
+  <script>
+    $(document).ready(function(){
+      // Example 1: Hide mystery book section
+      $("#hideMysteryBook").click(function(){
+        $(".mystery-book").hide();
+      });
+
+      // Example 2: Toggle visibility of all book genres
+      $("#toggleGenres").click(function(){
+        $(".genre").toggle();
+      });
+
+      // Example 3: Slide toggle the fantasy book details
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+  </script>
+</head>
+<body>
+  
+
+  <!-- Example 1: Mystery Book -->
+  <h2 class="mystery-book">Mystery Book: "The Whispers in the Night"</h2>
+  <p class="book-description mystery-book">A thrilling mystery that keeps you guessing until the last page.</p>
+  <button id="hideMysteryBook">Hide Mystery Book Details</button>
+
+  <hr>
+
+  <!-- Example 2: Toggle All Book Genres -->
+  <button id="toggleGenres">Toggle All Book Genres</button>
+  
+  <div class="genre">
+    <h3>Romance: "Love in Bloom"</h3>
+    <p class="book-description">An enchanting story of love found amidst blooming flowers and new beginnings.</p>
+  </div>
+  
+  <div class="genre">
+    <h3>Adventure: "Into the Unknown"</h3>
+    <p class="book-description">Follow a group of friends as they venture into uncharted territories.</p>
+  </div>
+  
+  <div class="genre">
+    <h3>Science Fiction: "Beyond the Stars"</h3>
+    <p class="book-description">Explore distant galaxies and discover alien civilizations in this sci-fi saga.</p>
+  </div>
+
+  <hr>
+
+  <!-- Example 3: Fantasy Book with Slide Toggle -->
+  <div id="flip">Click to Show/Hide Fantasy Book Details</div>
+  <div id="panel">
+    <h3>Fantasy Book: "The Realm of Magic"</h3>
+    <p class="book-description">Dive into a world of wizards, enchanted forests, and mystical creatures.</p>
+  </div>
+
+</body>
+</html>
