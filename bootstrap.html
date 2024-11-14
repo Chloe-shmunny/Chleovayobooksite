@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fantasy Book Haven</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: #f5f0e1;
+      font-family: 'Garamond', serif;
+    }
+    .jumbotron {
+      background-image: url('fantasy-book-background.jpg');
+      background-size: cover;
+      color: #d4af37;
+      padding: 80px 25px;
+    }
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+      color: #5c4033;
+    }
+    .container {
+      margin-bottom: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .table-bordered th, .table-bordered td {
+      vertical-align: middle;
+    }
+    .thumbnail img {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+    .thumbnail .caption {
+      color: #5c4033;
+      font-size: 14px;
+    }
+    .dropdown-toggle, .btn-primary {
+      background-color: #d4af37;
+      border: none;
+    }
+    .input-group .form-control {
+      border: 1px solid #d4af37;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Welcome to Fantasy Book Haven</h1>
+  <p>Take a look into a new world</p>
+</div>
+
+<!-- Section: Fantasy Book Lists -->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h3>Fantasy books I've read</h3>
+      <ul>
+        <li>The Ever Kings</li>
+        <li>City of Lies and Legends</li>
+        <li>Fourth Wing</li>
+        <li>Throne of Glass</li>
+        <li>Heartless Hunger</li>
+        <li>The Foxglove King</li>
+        <li>House of Ash and Shadow</li>
+        <li>From Blood and Ash</li>
+        <li>...and more</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3>Books I want to read</h3>
+      <ul>
+        <li>The Silent Patient</li>
+        <li>Night Circus</li>
+        <li>Before the Coffee Gets Cold</li>
+        <li>Fall of Wrath and Ruin</li>
+        <li>House of Sky and Breath</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3>Coming Soon</h3>
+      <ul>
+        <li>Onyx Storm</li>
+        <li>House of Flame and Shadow</li>
+        <li>Burn of the Everflame</li>
+        <li>The Ballad of Falling Dragons</li>
+        <li>The Primal of Blood and Bone</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Section: Favorite Authors -->
+<div class="container">
+  <h2>Top Fantasy Authors</h2>
+  <ul class="list-unstyled">
+    <li><h3>Sarah J. Maas</h3></li>
+    <li><h4>Jennifer L. Armentrout</h4></li>
+    <li><h5>Holly Black</h5></li>
+    <li><h6>Deborah Harkness</h6></li>
+  </ul>
+</div>
+
+<!-- Table with Favorite Fantasy Characters -->
+<div class="container">
+  <h2>My Favorite Fantasy Characters</h2>
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Book/Series</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Throne of Glass series</td>
+        <td>Aelin Ashryver Galathynius</td>
+        <td>Lost Heir of Terrasin</td>
+      </tr>
+      <tr>
+        <td>When the Moon Hatched</td>
+        <td>Raeve</td>
+        <td>Assassin for the rebellion group Fiur du Ath</td>
+      </tr>
+      <tr>
+        <td>Burn of the Everflame series</td>
+        <td>Diem Bellator</td>
+        <td>Healer Queen of Lumnos, Daughter of the Forgotten, Devourer of Crowns</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Fantasy Image Gallery -->
+<div class="container">
+  <h2>Fantasy Worlds Gallery</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/terrasin.jpg" alt="City of Terrasin">
+        <div class="caption">
+          <p>City of Terrasin</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/undercity.jpg" alt="The Undercity">
+        <div class="caption">
+          <p>The Undercity where you can buy anything.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/Elentiya | bookblogger (@edits_by_elentiya) • Photos et vidéos Instagram.jpg" alt="City of Lumnos">
+        <div class="caption">
+          <p>City of Lumnos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Join Form -->
+<div class="container mt-5">
+  <h2>Join the Adventure</h2>
+  <p>Sign up for exclusive fantasy book recommendations and updates.</p>
+  <div class="input-group mt-3 mb-3">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Choose your realm
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Terrasin</a></li>
+      <li><a class="dropdown-item" href="#">Undercity</a></li>
+      <li><a class="dropdown-item" href="#">Lumnos</a></li>
+    </ul>
+    <input type="text" class="form-control" placeholder="Enter your name">
+  </div>
+</div>
+
+</body>
+</html>
